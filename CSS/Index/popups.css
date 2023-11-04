@@ -1,0 +1,88 @@
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .popup-content {
+    background: #fff;
+    height: 75vh;
+    width: 60vw;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #close-popup {
+    display: block;
+    margin-top: 1em;
+    background-color: white;
+    color: black;
+    border: 0.2em solid #d4d4d4;
+    height: 7.5vh;
+    border-radius: 0.15em;
+    cursor: pointer;
+  }
+  .popup-content h2 {
+    text-align: center;
+}
+
+.popup-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+
+.popup-content input {
+    border: 0.15em solid #d4d4d4;
+    border-radius: 0.1em;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+}
+
+.popup-content input[type="submit"] {
+    margin-top: 1em;
+    height: 4vh;
+    width: 20vw;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.popup-content input[type="submit"]:hover {
+    scale: 0.9;
+}
+.popup-content h1 {
+    font-size: 3em;
+}
+.popup-content p {
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+}
+
+.popup-content #register-button {
+    border: 0.1em solid #d4d4d4;
+    font-family: 'Montserrat', arial, sans-serif;
+
+    font-size: 1.2em;
+}
+
+.popup-content #register-button:hover{
+    scale: 0.9 !important;
+}

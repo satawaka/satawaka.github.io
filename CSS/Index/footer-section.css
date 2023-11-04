@@ -1,0 +1,71 @@
+footer {
+    margin-top: 1em;
+    border-radius: 0.25em;;
+    height: 40vh;
+    background-color: white;
+    border: 0.15em solid #d4d4d4;
+    display: grid;
+    grid-template-areas:
+    "left center right";
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+}
+footer h1 {
+    font-size: 0.8em;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+footer button {
+    margin-top: 1em;
+    border: 0.12em solid black;
+    background-color: white;
+    border-radius: 0.5em;
+    width: 20vw;
+    height: 4.5vh;
+    font-family:'Montserrat', Arial, serif;
+    font-weight: bold;
+    scale: 0.8;
+    transition: 0.2s ease;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+footer button:hover {
+    scale: 1.2;
+}
+
+.central-items {
+    grid-area: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-items {
+    grid-area: right;
+    overflow: auto;
+}
+.panel {
+    background-color: white;
+    border: 0.15em solid #d4d4d4;
+    color: white;
+    height: 35vh;
+    margin: 1em 1em 1em 1em;
+    border-radius: 0.25em;
+    overflow: auto;
+    cursor: crosshair;
+}
+
+.layer1 {
+    transform: translateZ(-1px) scale(2);
+}
+
+.layer2 {
+    transform: translateZ(-2px) scale(2.5);
+}
+
+.layer3 {
+    transform: translateZ(-3px) scale(3);
+}

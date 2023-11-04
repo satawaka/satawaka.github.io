@@ -1,0 +1,38 @@
+header {
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    background-color: #070707;
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+nav a {
+    color: white;
+    font-size: 1.2em;
+    transition: 0.1s ease;
+}
+
+nav a:hover {
+    font-size: 1.4em;
+}

@@ -1,0 +1,52 @@
+aside {
+    margin-top: 10vh;
+    background-color: white;
+    border: 0.10em solid #d4d4d4;
+    padding: 2em;
+    height: 45vh;
+    border-radius: 0.25em;
+}
+
+.instagram-logo {
+    scale: 0.2;
+}
+
+aside h1 {
+    font-size: 3em;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+}
+
+aside p {
+    color: rgb(128, 128, 128);
+    font-size: 2em;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    margin-top: -0.8em;
+}
+
+.phone {
+    font-size: 1.5em;
+}
+.email {
+    font-size: 3em;
+}
+
+.quick-contact::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 20%;
+    height: 1.2em;
+    background-color: #3864d4;
+    box-sizing: content-box;
+    transform: scaleX(0); /* Initially, set the scale to 0 to hide the underline */
+    transform-origin: center;
+    transition: transform 0.3s ease; /* Add a smooth transition */
+}
+.quick-contact:hover::after {
+    transform: scaleX(1); /* Scale the underline to 100% width on hover */
+}
